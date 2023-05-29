@@ -167,7 +167,7 @@ resin_thickness = 3e-4 # 0.3[mm]
 enamel_conductivity = 0.25 # [W/m/K]
 resin_conductivity = 0.22 # [W/m/K]
 
-if __name__ == "__main__":
+def run_all():
     job_start = perf_counter()
     start_write(file_source, temperature_to_set)
     run_writers(file_source, temperature_to_set)
